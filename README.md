@@ -1,8 +1,25 @@
-# 62. Understanding Angular Error Messages
+# Section 2: Debugging
+
+## 63. Debugging Code in the Browser Using Sourcemaps
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656260
+
+
+### The Error
+
+No error...but last server cnanot be deleted
+
+### The Solution
+
+change `const position = id + 1;` to `const position = id;`
+
+## 62. Understanding Angular Error Messages
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656252
 
-## The Error
+### The Error
+
+when clicking the Add Server button
 
 ```
 core.js:6210 ERROR TypeError: Cannot read properties of undefined (reading 'push')
@@ -18,7 +35,7 @@ core.js:6210 ERROR TypeError: Cannot read properties of undefined (reading 'push
     at ZoneTask.invokeTask [as invoke] (zone.js:503)
 ```
 
-## The Fix
+### The Solution
 
 changed this...
 
