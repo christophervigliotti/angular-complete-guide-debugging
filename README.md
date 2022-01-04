@@ -17,3 +17,19 @@ core.js:6210 ERROR TypeError: Cannot read properties of undefined (reading 'push
     at Zone.runTask (zone.js:188)
     at ZoneTask.invokeTask [as invoke] (zone.js:503)
 ```
+
+## The Fix
+
+changed this...
+
+```
+export class AppComponent {
+  servers;
+```
+
+...to this...
+
+```
+export class AppComponent {
+  servers = [];
+```
